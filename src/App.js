@@ -1,17 +1,10 @@
-import logo from './logo.png';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          CAPE MUSIC ACADEMY
-        </p>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+    <Routes>
+        <Route path="/" element={<Home />} />
+    </Routes>
+);
 
 export default App;
