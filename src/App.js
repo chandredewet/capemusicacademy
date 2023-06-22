@@ -1,17 +1,12 @@
-import logo from './logo.png';
-import './App.css';
+import Home from "./Home";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          CAPE MUSIC ACADEMY
-        </p>
-      </header>
+      <Home />
     </div>
   );
-}
+};
 
 export default App;
