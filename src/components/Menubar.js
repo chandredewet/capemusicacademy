@@ -7,7 +7,7 @@ import "./Menubar.css";
 
 const Menubar = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary py-0">
       <Container fluid style={{ backgroundColor: "black", color: "white" }}>
         <Navbar.Brand href="#">
           <img
