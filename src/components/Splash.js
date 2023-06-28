@@ -19,10 +19,24 @@ const Splash = () => {
         </div>
         <p>Ready to get started?</p>
         <p>Sign up or contact us</p>
-        <Button variant="dark" style={{ width: 200, height: 60 }}>
+        <Button
+          id="cta-solid"
+          variant="dark"
+          style={{ width: 200, height: 60, fontWeight: "bold" }}
+        >
           Sign Up
         </Button>
-        <Button variant="dark" style={{ width: 200, height: 60 }}>
+        <Button
+          id="cta-outline"
+          variant="outline-dark"
+          style={{
+            width: 200,
+            height: 60,
+            border: "4px solid black",
+            fontWeight: "bold",
+            color: "black",
+          }}
+        >
           Contact Us
         </Button>
       </article>

@@ -1,20 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans&family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@500;700;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans&family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@500;700;900&display=swap");
+
 .splash-container {
-  /* height: 4570px; */
   margin: 0;
 }
-
-/* .splash-hero-title {
-  margin-top: 0;
-  padding: 50px;
-  background-color: black;
-  font-family: "Playfair Display";
-  font-weight: 600;
-  font-size: 40px;
-  color: white;
-  text-align: center;
-} */
 
 .splash-container h2 {
   padding: 30px 20px;
@@ -24,9 +14,24 @@
 }
 
 .splash-article-container {
-  height: 90rem;
+  height: 83rem;
   padding: 40px 40px;
   background-color: #ffa452;
+}
+
+.splash-article-container p:nth-last-of-type(2) {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+  margin-bottom: -4px;
+}
+
+.splash-article-container:nth-last-of-type(1) {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 32px;
+  color: black;
 }
 
 .splash-title {
@@ -36,6 +41,8 @@
 .splash-block {
   background-color: black;
   height: 45rem;
+  margin-bottom: 2rem;
+  padding: 0;
 }
 
 .splash-hero-img {
@@ -51,4 +58,19 @@
   font-size: 1.5rem;
   color: white;
   font-family: "Lato";
+}
+
+#cta-solid {
+  font-weight: 400;
+  margin: 2rem 0;
+  background-color: black;
+  border-radius: 5px;
+}
+
+#cta-outline {
+  font-weight: 400;
+  margin-bottom: 2rem;
+  outline-color: black;
+  stroke-width: 2rem;
+  border-radius: 5px;
 }
