@@ -21,10 +21,29 @@ const Landing = () => {
           Sustainable <span style={{ color: "orange" }}>Musicians</span>
         </h1>
         <h2 className="headerTwo">Creative Entrepreneurs</h2>
-        <Button variant="dark" style={{ width: 200, height: 60 }}>
+        <Button
+          variant="dark"
+          style={{
+            width: 200,
+            height: 60,
+            fontWeight: "bold",
+            color: "white",
+            background: "black",
+            border: "5px"
+          }}
+        >
           Enroll Now
         </Button>
-        <Button variant="outline-light" style={{ width: 200, height: 60 }}>
+        <Button
+          variant="outline-light"
+          style={{
+            width: 200,
+            height: 60,
+            border: "4px solid white",
+            fontWeight: "bold",
+            color: "white",
+          }}
+        >
           Sign Up
         </Button>
         <div className="socialMedia">
