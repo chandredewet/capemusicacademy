@@ -20,13 +20,17 @@
   position: absolute;
   background-color: #ff8800;
   color: black;
-  height: 326px;
+  height: 400px;
   bottom: 0;
-  padding: 40px 20px;
+}
+
+.logo-primary {
+  padding: 40px 0 20px 0;
 }
 
 .disclaimer p {
   justify-content: baseline;
+  padding: 40px 40px;
 }
 
 .footer-section {
@@ -42,6 +46,8 @@
   color: grey;
   background-color: black;
   margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: "Lato";
 }
 
 #emailInput {
@@ -51,6 +57,8 @@
   color: grey;
   background-color: black;
   margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: "Lato";
 }
 
 #textInput {
@@ -60,6 +68,8 @@
   color: grey;
   background-color: black;
   margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: "Lato";
 }
 
 .map {

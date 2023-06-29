@@ -5,10 +5,12 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
 import "./Footer.css";
 import Facebook from "../assets/facebookIcon.png";
 import Email from "../assets/emailIcon.png";
 import Contact from "../assets/ContactIcon.png";
+import Logo from "../assets/logos/cma-logo.png";
 
 function Footer() {
   const [validated, setValidated] = useState(false);
@@ -109,6 +111,9 @@ function Footer() {
         <img src={Contact} alt="Contact or Telephone Icon" className="px-4" />
       </div>
       <div class="disclaimer">
+        <div class="logo-primary">
+          <Image src={Logo} alt="logo of cape music academy" fluid />
+        </div>
         <p>
           © 2023 Privacy -Terms - A product by the Cape Music Academy - This
           website is created by Chezlin Benson & Chandre De Wet{" "}
