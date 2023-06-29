@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans&family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@500;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans&family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@500;700;900&display=swap");
+
+.footer-container {
+  position: relative;
+  background-color: black;
+  color: white;
+  height: 120rem;
+  padding: 50px 40px;
+}
+
+.header-section h2 {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.disclaimer {
+  position: absolute;
+  background-color: #ff8800;
+  color: black;
+  height: 400px;
+  bottom: 0;
+}
+
+.logo-primary {
+  padding: 40px 0 20px 0;
+}
+
+.disclaimer p {
+  justify-content: baseline;
+  padding: 40px 40px;
+}
+
+.footer-section {
+  text-align: left;
+  padding: 50px 40px;
+  justify-content: space-around;
+}
+
+#nameInput {
+  border-radius: 0%;
+  border-color: black;
+  border-bottom: 3px solid #ff8800;
+  color: grey;
+  background-color: black;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+#emailInput {
+  border-radius: 0%;
+  border-color: black;
+  border-bottom: 3px solid #ff8800;
+  color: grey;
+  background-color: black;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+#textInput {
+  border-radius: 0%;
+  border-color: black;
+  border-bottom: 3px solid #ff8800;
+  color: grey;
+  background-color: black;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+.map {
+  height: 278px;
+  width: auto;
+  border-radius: 5px;
+  background-color: grey;
+  margin: 50px 0 6rem 0;
+  padding: 20px 40px;
+}
+
+.map-section {
+  margin: 100px 0 20px 0;
+}
+
+.map-section h2 {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+
+.socialMedia {
+  margin-top: 4rem;
+}
