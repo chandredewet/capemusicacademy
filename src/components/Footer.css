@@ -73,16 +73,20 @@
 }
 
 .map {
-  height: 278px;
-  width: auto;
   border-radius: 5px;
-  background-color: grey;
   margin: 50px 0 6rem 0;
-  padding: 20px 40px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+iframe {
+  border-radius: 5px;
 }
 
 .map-section {
   margin: 100px 0 20px 0;
+  text-align: center;
 }
 
 .map-section h2 {
