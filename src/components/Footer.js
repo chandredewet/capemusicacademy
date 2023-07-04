@@ -13,9 +13,14 @@ import Contact from "../assets/ContactIcon.png";
 import Logo from "../assets/logos/cma-logo.png";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Modal from "react-bootstrap/Modal";
 
 function Footer() {
   const [validated, setValidated] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const form = useRef();
 
@@ -57,7 +62,13 @@ function Footer() {
         </h2>
       </section>
       <section class="footer-section">
-        <Form ref={form} noValidate validated={validated} onSubmit={sendEmail}>
+        <Form
+          ref={form}
+          noValidate
+          validated={validated}
+          onSubmit={sendEmail}
+          onClick={handleShow}
+        >
           <Row className="mb-3">
             <Form.Group as={Col} md="4" controlId="validationCustom01">
               <Form.Label>Full Name</Form.Label>
