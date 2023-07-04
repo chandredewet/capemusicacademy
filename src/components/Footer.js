@@ -11,18 +11,40 @@ import Facebook from "../assets/facebookIcon.png";
 import Email from "../assets/emailIcon.png";
 import Contact from "../assets/ContactIcon.png";
 import Logo from "../assets/logos/cma-logo.png";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Footer() {
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    // const form = e.currentTarget;
+    // if (form.checkValidity() === false) {
+    //   e.preventDefault();
+    //   e.stopPropagation();
+    // }
 
     setValidated(true);
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_n9w5cul",
+        "template_vg9zzy9",
+        form.current,
+        "oOt9WwJwz6x-O9s33"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -35,12 +57,14 @@ function Footer() {
         </h2>
       </section>
       <section class="footer-section">
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form ref={form} noValidate validated={validated} onSubmit={sendEmail}>
           <Row className="mb-3">
             <Form.Group as={Col} md="4" controlId="validationCustom01">
               <Form.Label>Full Name</Form.Label>
               <Form.Control
                 id="nameInput"
+                name="user_name"
+                from="from_name"
                 required
                 type="text"
                 placeholder="Full Name"
@@ -53,6 +77,7 @@ function Footer() {
               <InputGroup hasValidation>
                 <Form.Control
                   id="emailInput"
+                  name="user_email"
                   type="text"
                   placeholder="Email Address"
                   required
@@ -65,6 +90,7 @@ function Footer() {
               <InputGroup>
                 <Form.Control
                   id="textInput"
+                  name="message"
                   as="textarea"
                   aria-label="With textarea"
                   placeholder="What Can We Do For You?"
