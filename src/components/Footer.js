@@ -90,7 +90,23 @@ function Footer() {
         </Form>
         <div class="map-section">
           <h2>Our Location</h2>
-          <div class="map"></div>
+          <div class="map">
+            <iframe
+              title="map"
+              id="map-frame"
+              width="300"
+              height="278"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=771&amp;height=600&amp;hl=en&amp;q=Block%20A%20%7C%20Western%20Cape%20Sports%20School%20%20Old%20Nooiensfontein%20Road%20%20Kuils%20River%20%207580+(Cape%20Music%20Academy)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            >
+              <a href="https://www.maps.ie/distance-area-calculator.html">
+                measure acres/hectares on map
+              </a>
+            </iframe>
+          </div>
         </div>
       </section>
       <div class="address-section">
