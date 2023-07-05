@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans&family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@500;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans&family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@500;700;900&display=swap");
+
+.courses-container {
+  position: relative;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  height: 125rem;
+}
+
+.card-container {
+  position: absolute;
+  z-index: 0;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  row-gap: 25px;
+}
+
+.card-styles {
+  line-height: 25px;
+}
+
+.course-image {
+  position: absolute;
+  z-index: -1;
+  bottom: -0;
+  left: 0%;
+}
+
+.courses-container h2 {
+  padding: 30px 20px;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 32px;
+  color: black;
+}
+
+#card-button {
+  font-weight: 400;
+  margin: 2rem 0;
+  background-color: black;
+  border-radius: 5px;
+  outline-style: none;
+}

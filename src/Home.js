@@ -1,9 +1,8 @@
 import Landing from "./components/Landing";
 import About from "./components/About";
 import Splash from "./components/Splash";
-// import Courses from "./components/Courses";
+import Courses from "./components/Courses";
 import Footer from "./components/Footer";
-
 
 const Home = () => {
   return (
@@ -11,8 +10,8 @@ const Home = () => {
       <Landing />
       <About />
       <Splash />
-      {/* <Courses /> */}
-      <Footer /> 
+      <Courses />
+      <Footer />
     </div>
   );
 };
