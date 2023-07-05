@@ -66,13 +66,7 @@ function Footer() {
       </section>
 
       <section class="footer-section">
-        <Form
-          ref={form}
-          noValidate
-          validated={validated}
-          onSubmit={sendEmail}
-          onClick={handleShow}
-        >
+        <Form ref={form} noValidate validated={validated} onSubmit={sendEmail}>
           <Row className="mb-3">
             <Form.Group as={Col} md="4" controlId="validationCustom01">
               <Form.Label>Full Name</Form.Label>
@@ -113,7 +107,6 @@ function Footer() {
               </InputGroup>
             </Form.Group>
           </Row>
-
           <Button
             type="submit"
             id="submit-button"
@@ -125,9 +118,33 @@ function Footer() {
               fontWeight: "regular",
               color: "white",
             }}
+            onClick={handleShow}
           >
             Submit form
           </Button>
+          <Modal id="modalCard" show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>THANK YOU!</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              Your Details Has Been Successfully Submitted
+            </Modal.Body>
+            <Modal.Footer>
+              <Button
+                variant="secondary"
+                onClick={handleClose}
+                style={{
+                  width: 200,
+                  height: 60,
+                  backgroundColor: "#ff8800",
+                  fontWeight: "regular",
+                  color: "white",
+                }}
+              >
+                OK
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </Form>
         <div class="map-section">
           <h2>Our Location</h2>
