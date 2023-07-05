@@ -16,14 +16,15 @@ import emailjs from "@emailjs/browser";
 import Modal from "react-bootstrap/Modal";
 
 function Footer() {
+  // Set Validation
   const [validated, setValidated] = useState(false);
   const [show, setShow] = useState(false);
 
+  // Set Show Message
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   const form = useRef();
-
   const sendEmail = (e) => {
     // const form = e.currentTarget;
     // if (form.checkValidity() === false) {
@@ -34,6 +35,7 @@ function Footer() {
     setValidated(true);
     e.preventDefault();
 
+    // Set EmailJS Public Key variables/ Tokens
     emailjs
       .sendForm(
         "service_n9w5cul",
@@ -53,6 +55,7 @@ function Footer() {
   };
 
   return (
+    // Container with Form,CTA Button, Google Maps and Contact Details.
     <Container fluid className="px-0 footer-container">
       <section class="header-section">
         <h2>
@@ -61,6 +64,7 @@ function Footer() {
           In Touch
         </h2>
       </section>
+
       <section class="footer-section">
         <Form
           ref={form}
@@ -79,7 +83,7 @@ function Footer() {
                 required
                 type="text"
                 placeholder="Full Name"
-                defaultValue="Mark"
+                // defaultValue="Mark"
               />
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
