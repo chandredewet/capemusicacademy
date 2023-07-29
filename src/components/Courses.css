@@ -10,14 +10,16 @@
 }
 
 .card-container {
-  position: absolute;
+  /* position: absolute; */
   z-index: 0;
   top: 120px;
-  display: flex;
+  display: inline-block;
+  text-align: center;
+  /* display: flex;
   flex-direction: column;
   text-align: center;
-  justify-items: center;
-  row-gap: 25px;
+  justify-items: center; 
+  row-gap: 25px; */
 }
 
 .card-styles {
@@ -44,5 +46,11 @@
   margin: 2rem 0;
   background-color: black;
   border-radius: 5px;
+  outline-style: none;
+  border: black;
+}
+
+#card-button :hover {
+  border-bottom-color: black;
   outline-style: none;
 }

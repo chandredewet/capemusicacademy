@@ -9,12 +9,19 @@ import Email from "../assets/emailIcon.png";
 import Contact from "../assets/ContactIcon.png";
 
 const Landing = () => {
+  const containerStyle = {
+    border: "none",
+    boxShadow: "none",
+    backgroundImage: `url(${MobileHero})`,
+  };
+
   return (
     <Container fluid className="px-0">
       <Menubar />
       <article
         className="article"
-        style={{ backgroundImage: `url(${MobileHero})` }}
+        // style={{ backgroundImage: `url(${MobileHero})` }}
+        style={containerStyle}
         alt="Guitarist Posing"
       >
         <h1 className="header">
@@ -29,7 +36,7 @@ const Landing = () => {
             fontWeight: "bold",
             color: "white",
             background: "black",
-            border: "5px"
+            border: "5px",
           }}
         >
           Enroll Now

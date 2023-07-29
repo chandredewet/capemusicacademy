@@ -10,8 +10,13 @@ import CourseIcon3 from "../assets/courses/course Icon3.png";
 import CourseIcon4 from "../assets/courses/course Icon4.png";
 
 const Courses = () => {
+  const containerStyle = {
+    border: "none",
+    boxShadow: "none",
+  };
+
   return (
-    <Container fluid className="px-0 courses-container">
+    <Container fluid className="px-0 courses-container" style={containerStyle}>
       <h2>Courses</h2>
 
       <section className="card-container">
@@ -20,6 +25,8 @@ const Courses = () => {
             width: "18rem",
             textAlign: "center",
             backgroundColor: "#F29F05",
+            marginBottom: "25px",
+            border: "none",
           }}
         >
           <Card.Body className="card-styles">
@@ -47,6 +54,8 @@ const Courses = () => {
             width: "18rem",
             textAlign: "center",
             backgroundColor: "#F29F05",
+            marginBottom: "25px",
+            border: "none",
           }}
         >
           <Card.Body className="card-styles">
@@ -74,6 +83,8 @@ const Courses = () => {
             width: "18rem",
             textAlign: "center",
             backgroundColor: "#F29F05",
+            marginBottom: "25px",
+            border: "none",
           }}
         >
           <Card.Body className="card-styles">
@@ -101,6 +112,8 @@ const Courses = () => {
             width: "18rem",
             textAlign: "center",
             backgroundColor: "#F29F05",
+            marginBottom: "25px",
+            border: "none",
           }}
         >
           <Card.Body className="card-styles">
