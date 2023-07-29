@@ -13,13 +13,21 @@ body {
   padding: 0;
 }
 
-.article {
+.hero-container {
+  /* position: relative; */
   height: 100vh;
-  background-repeat: no-repeat;
+  width: 100vw;
+  margin-bottom: 6rem;
+}
+
+.article {
+  z-index: -1;
+  position: relative;
+  height: 100vh;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
-  place-items: center;
+  background: linear-gradient (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .header {
@@ -42,19 +50,17 @@ body {
   text-align: center;
 }
 
-.hero-container {
-  position: relative;
-}
-
 #cta-button {
   position: absolute;
   bottom: 50px;
 }
 
 .menubar {
-  position: absolute;
+  z-index: 1000;
+  position: relative;
   top: 0;
-  z-index: 0;
+  left: 0;
+  transition: 0.3s ease;
 }
 
 .socialMedia {

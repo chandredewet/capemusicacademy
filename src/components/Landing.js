@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Menubar from "./Menubar";
 import "./Landing.css";
-import MobileHero from "../assets/MobileHero.png";
+import MobileHero from "../assets/Homepage-Right.png";
 import Facebook from "../assets/facebookIcon.png";
 import Email from "../assets/emailIcon.png";
 import Contact from "../assets/ContactIcon.png";
@@ -14,7 +14,9 @@ const Landing = () => {
       <Menubar className="menubar" />
       <article
         className="article"
-        style={{ backgroundImage: `url(${MobileHero})` }}
+        style={{
+          backgroundImage: `url(${MobileHero})`,
+        }}
         alt="Guitarist Posing"
       >
         <h1 className="header">
