@@ -23,17 +23,20 @@ const Landing = () => {
     textTransform: "uppercase",
     background: "black",
     padding: "30px 0 60px",
+    marginBottom: "0",
   };
 
   return (
     <Container fluid className="px-0 hero-container">
       <Menubar className="menubar" />
-      <div style={headingStyle}>
-        <h1>Cape Music Academy</h1>
+      <div id="headingContainer">
+        <h1 style={headingStyle}>Cape Music Academy</h1>
+        <h2 className="header">
+          Sustainable <br /> Musicians
+        </h2>
+        <h2 className="headerTwo">Creative Entrepreneurs</h2>
       </div>
-      <h2 className="header">
-        Sustainable <br /> Musicians
-      </h2>
+
       <svg width="500" height="200" style={{ position: "absolute", left: "0" }}>
         <circle cx="200" cy="-70" r="40%" fill="black" />
       </svg>
@@ -42,7 +45,6 @@ const Landing = () => {
         style={containerStyle}
         alt="Guitarist Posing"
       >
-        <h2 className="headerTwo">Creative Entrepreneurs</h2>
         <section id="cta-button">
           <Button
             variant="dark"

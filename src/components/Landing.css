@@ -29,11 +29,14 @@ body {
   background-size: cover;
   background: linear-gradient (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
+#headingContainer {
+  position: relative;
+}
 
 .header {
   position: absolute;
   z-index: 1000;
-  top: 120px;
+  top: 70px;
   left: 25%;
   font-family: "Playfair Display";
   font-weight: 600;
@@ -46,7 +49,7 @@ body {
 .headerTwo {
   position: absolute;
   z-index: 1000;
-  top: 100px;
+  top: 220px;
   font-family: "Playfair Display";
   font-weight: 600;
   font-size: 36px;

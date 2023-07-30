@@ -12,9 +12,10 @@
 }
 
 #navbarScroll {
-  height: 35rem;
+  /* height: 30rem; */
   transition: 0.3s ease-in-out;
-  border-color: pink;
+  background: black;
+  z-index: 1500;
 }
 
 a.nav-link {
@@ -23,8 +24,8 @@ a.nav-link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-  padding: 1.5rem 0;
+  gap: 2rem;
+  padding: 1rem 0;
   font-family: "Playfair Display";
   font-weight: 400;
   font-size: 20px;
