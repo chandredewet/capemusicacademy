@@ -75,3 +75,12 @@ body {
   bottom: 10px;
   left: 25%;
 }
+
+/* see typical device breakpoints 
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+@media only screen and (min-width: 992px) {
+  div.example {
+    font-size: 80px;
+  }
+}

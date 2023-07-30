@@ -105,3 +105,79 @@
     width: 722px;
   }
 }
+
+/* see typical device breakpoints 
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+@media only screen and (min-width: 992px) {
+  .about-container {
+    max-width: 100vw;
+    position: relative;
+  }
+
+  .about-hero-title {
+    background: white;
+    color: black;
+    font-size: 40px;
+    padding-bottom: 200px;
+  }
+
+  .about-hero-img {
+    position: absolute;
+
+    width: 30vw;
+    height: 300px;
+    /* margin: 50 0 0 50px; */
+    /* padding-top: 5rem; */
+
+    right: 10%;
+    top: 100px;
+    width: auto;
+    transform: rotate(-15deg);
+  }
+  .about-article-container {
+    margin: 50px;
+  }
+  .about-article-container article {
+    margin: 50px;
+  }
+  .about-article-container article img {
+    width: 714px;
+    height: 314px;
+  }
+
+  .about-article-container article div {
+    width: 714px;
+  }
+
+  .about-article-container article p {
+    padding: 0;
+    text-align: left;
+  }
+
+  .about-article-container article h2 {
+    padding: 0;
+    text-align: left;
+  }
+
+  .about-article-container article {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  }
+  /* display: grid;
+    grid-template-columns: 714px 1fr;
+    grid-template-rows: 314px;
+    gap: 50px;
+    margin: 50px 100px;
+  }
+
+  
+
+ */
+
+  .about-article-container article:nth-child(2) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+}
