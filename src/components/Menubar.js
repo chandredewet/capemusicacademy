@@ -7,18 +7,19 @@ import "./Menubar.css";
 
 const Menubar = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary py-0" id="navbar">
+    <Navbar expand="lg" className="navbar-dark bg-body-tertiary" id="navbar">
       <Container fluid style={{ backgroundColor: "black", color: "white" }}>
         <Navbar.Brand href="#">
           <img
             src={Logo}
-            width="auto"
-            height="50"
+            width="70"
+            height="30"
+            style={{ padding: "5px" }}
             className="d-inline-block align-top"
             id="Logo"
             alt="CapeMusicAcademy Logo"
           />
-          <p>Cape Music Academy</p>
+          {/* <span>Cape Music Academy</span> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

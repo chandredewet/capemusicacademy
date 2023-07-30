@@ -12,47 +12,37 @@ const Landing = () => {
   const containerStyle = {
     border: "none",
     boxShadow: "none",
+    margin: "0 auto",
     backgroundImage: `url(${MobileHero})`,
+  };
+
+  const headingStyle = {
+    fontFamily: "roboto",
+    fontSize: "24px",
+    color: "orange",
+    textTransform: "uppercase",
+    background: "black",
+    padding: "30px 0 60px",
   };
 
   return (
     <Container fluid className="px-0 hero-container">
       <Menubar className="menubar" />
+      <div style={headingStyle}>
+        <h1>Cape Music Academy</h1>
+      </div>
+      <h2 className="header">
+        Sustainable <br /> Musicians
+      </h2>
+      <svg width="500" height="200" style={{ position: "absolute", left: "0" }}>
+        <circle cx="200" cy="-70" r="40%" fill="black" />
+      </svg>
       <article
         className="article"
-        // style={{ backgroundImage: `url(${MobileHero})` }}
         style={containerStyle}
         alt="Guitarist Posing"
       >
-        <h1 className="header">
-          Sustainable <span style={{ color: "orange" }}>Musicians</span>
-        </h1>
         <h2 className="headerTwo">Creative Entrepreneurs</h2>
-        <Button
-          variant="dark"
-          style={{
-            width: 200,
-            height: 60,
-            fontWeight: "bold",
-            color: "white",
-            background: "black",
-            border: "5px",
-          }}
-        >
-          Enroll Now
-        </Button>
-        <Button
-          variant="outline-light"
-          style={{
-            width: 200,
-            height: 60,
-            border: "4px solid white",
-            fontWeight: "bold",
-            color: "white",
-          }}
-        >
-          Sign Up
-        </Button>
         <section id="cta-button">
           <Button
             variant="dark"
@@ -63,6 +53,7 @@ const Landing = () => {
               color: "white",
               background: "black",
               border: "5px",
+              marginBottom: "15px",
             }}
           >
             Enroll Now

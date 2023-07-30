@@ -15,7 +15,7 @@ const About = () => {
           performance, and improvisation. <br />{" "}
           <span className="about-hero-star">*</span>{" "}
         </p>
-        {/* <Image src={mic} alt="microphone" className="about-hero-img" fluid /> */}
+        <Image src={mic} alt="microphone" className="about-hero-img" fluid />
       </section>
       <section class="about-article-container">
         <article>

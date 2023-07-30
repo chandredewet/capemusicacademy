@@ -3,6 +3,7 @@ import About from "./components/About";
 import Splash from "./components/Splash";
 import Courses from "./components/Courses";
 import Footer from "./components/Footer";
+import "./Home.css";
 
 const Home = () => {
   return (
