@@ -20,7 +20,8 @@
   position: absolute;
   background-color: #ff8800;
   color: black;
-  height: 400px;
+  height: 250px;
+  width: 100vw;
   bottom: 0;
 }
 
@@ -104,4 +105,19 @@ iframe {
 
 .socialMedia {
   margin-top: 4rem;
+}
+
+/* Media queries for Desktop */
+
+@media screen and (min-width: 768px) and (max-width: 1420px) {
+  .footer-section {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 0;
+  }
+
+  #cma-logo {
+    height: 100px;
+  }
 }

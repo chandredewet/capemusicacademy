@@ -17,6 +17,10 @@ const Courses = () => {
 
   return (
     <Container fluid className="px-0 courses-container" style={containerStyle}>
+      <p className="courses-hero-title">
+        Broaden Your Music Knowledge And Gain Formal Experience Through Industry
+        Professional Training. <br /> <span className="about-hero-star">*</span>{" "}
+      </p>
       <h2>Courses</h2>
 
       <section className="card-container">

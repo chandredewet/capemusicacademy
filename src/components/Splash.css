@@ -74,3 +74,71 @@
   stroke-width: 2rem;
   border-radius: 5px;
 }
+
+/* @media only screen and (min-device-width: 1024px) and (max-device-width: 1349px) {
+  .splash-block {
+    background-color: blue;
+    height: 5rem;
+  }
+} */
+
+/* Media queries for Desktop */
+
+@media screen and (min-width: 768px) and (max-width: 1420px) {
+  .splash-article-container {
+    height: 60rem;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .splash-block {
+    display: flex;
+    width: 1000px;
+    height: 460.418px;
+    flex-shrink: 0;
+    background-color: black;
+  }
+
+  .splash-title {
+    color: blue;
+    font-family: Playfair Display;
+    font-size: 500px;
+    /* font-style: normal; */
+    font-weight: 600;
+    /* line-height: normal; */
+  }
+
+  h2:first-child {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  #splash-flex h2 {
+    font-size: 95.37px;
+    color: aqua;
+  }
+
+  #splash-hero-star {
+    visibility: hidden;
+  }
+
+  #splash-cta {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+
+  #splash-ctaWords {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #splash-btn {
+  }
+
+  /* .splash-article-container p:nth-last-child(2) {
+    color: aqua;
+  } */
+}

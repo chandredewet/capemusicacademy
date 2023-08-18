@@ -7,15 +7,28 @@
 
 #Logo {
   height: 50px;
-  padding: 1rem 0 0 3rem;
+  padding: 1rem;
   color: white;
 }
 
 #navbarScroll {
-  /* height: 30rem; */
   transition: 0.3s ease-in-out;
   background: black;
-  z-index: 1500;
+  z-index: 10;
+}
+
+#navCollapse {
+  z-index: 100;
+  /* height: 100vh; */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.1s;
+}
+
+#navbar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 a.nav-link {
@@ -24,10 +37,12 @@ a.nav-link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 1rem 0;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
   font-family: "Playfair Display";
   font-weight: 400;
   font-size: 20px;
   color: white;
 }
+
+/* Media queries for Desktop */

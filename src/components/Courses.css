@@ -3,10 +3,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans&family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@500;700;900&display=swap");
 
 .courses-container {
-  position: relative;
-  margin: 40px auto 0 auto;
+  /* position: relative; */
+  margin: 40px auto 520px auto;
   text-align: center;
   height: 125rem;
+}
+
+.courses-hero-title {
+  margin: -45px 0 40px 0;
+  padding: 150px 20px 50px;
+  background-color: black;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  text-align: center;
 }
 
 .card-container {
@@ -27,9 +38,9 @@
 }
 
 .course-image {
-  position: absolute;
+  position: relative;
   z-index: -1;
-  bottom: -0;
+  bottom: 130px;
   left: 0%;
 }
 
@@ -53,4 +64,36 @@
 #card-button :hover {
   border-bottom-color: black;
   outline-style: none;
+}
+
+/* Media queries for Desktop */
+
+@media screen and (min-width: 768px) and (max-width: 1420px) {
+  .courses-container {
+    margin: 0;
+  }
+  .courses-hero-title {
+    background: white;
+    color: black;
+    font-size: 32px;
+    padding: 150px 100px 200px 100px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card-styles {
+    /* width:900px ;
+    height: auto; */
+  }
+
+  .course-image {
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+    bottom: 500px;
+    left: 0%;
+  }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import Menubar from "./Menubar";
 import "./Landing.css";
 import MobileHero from "../assets/Homepage-Right.png";
 import Facebook from "../assets/facebookIcon.png";
@@ -18,7 +17,7 @@ const Landing = () => {
 
   const headingStyle = {
     fontFamily: "roboto",
-    fontSize: "24px",
+    fontSize: "16px",
     color: "orange",
     textTransform: "uppercase",
     background: "black",
@@ -28,13 +27,14 @@ const Landing = () => {
 
   return (
     <Container fluid className="px-0 hero-container">
-      <Menubar className="menubar" />
       <div id="headingContainer">
         <h1 style={headingStyle}>Cape Music Academy</h1>
-        <h2 className="header">
-          Sustainable <br /> Musicians
-        </h2>
-        <h2 className="headerTwo">Creative Entrepreneurs</h2>
+        <div id="headerFlex">
+          <h2 className="header">
+            Sustainable <br /> <span id="headerColor">Musicians</span>
+          </h2>
+          <h2 className="headerTwo">Creative Entrepreneurs</h2>
+        </div>
       </div>
 
       <svg width="500" height="200" style={{ position: "absolute", left: "0" }}>
