@@ -4,10 +4,12 @@ import Splash from "./components/Splash";
 import Courses from "./components/Courses";
 import Footer from "./components/Footer";
 import "./Home.css";
+import Menubar from "./components/Menubar";
 
 const Home = () => {
   return (
     <div className="Home">
+      <Menubar className="menubar" />
       <Landing />
       <About />
       <Splash />

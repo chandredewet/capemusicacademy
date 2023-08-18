@@ -186,7 +186,7 @@ function Footer() {
       </div>
       <div class="disclaimer">
         <div class="logo-primary">
-          <Image src={Logo} alt="logo of cape music academy" fluid />
+          <Image src={Logo} id="cma-logo" alt="logo of cape music academy" fluid />
         </div>
         <p>
           © 2023 Privacy -Terms - A product by the Cape Music Academy - This

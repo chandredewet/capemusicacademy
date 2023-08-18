@@ -35,7 +35,7 @@ body {
 
 .header {
   position: absolute;
-  z-index: 1000;
+  z-index: 1;
   top: 70px;
   left: 25%;
   font-family: "Playfair Display";
@@ -48,13 +48,17 @@ body {
 
 .headerTwo {
   position: absolute;
-  z-index: 1000;
+  z-index: 1;
   top: 220px;
   font-family: "Playfair Display";
   font-weight: 600;
   font-size: 36px;
   color: white;
   text-align: center;
+}
+
+#headerColor {
+  color:#F29F05 ;
 }
 
 #cta-button {
@@ -76,11 +80,23 @@ body {
   left: 25%;
 }
 
+/* Media queries for Desktop */
+
 /* see typical device breakpoints 
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
   div.example {
     font-size: 80px;
+  }
+} */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1324px) {
+  #headerFlex{
+    display: flex;
+    flex-direction: row;
+  }
+  .headerTwo{
+    top: 400px;
   }
 }

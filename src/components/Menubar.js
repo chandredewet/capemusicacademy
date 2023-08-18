@@ -8,7 +8,11 @@ import "./Menubar.css";
 const Menubar = () => {
   return (
     <Navbar expand="lg" className="navbar-dark bg-body-tertiary" id="navbar">
-      <Container fluid style={{ backgroundColor: "black", color: "white" }}>
+      <Container
+        id="navbar-container"
+        fluid
+        style={{ backgroundColor: "black", color: "white" }}
+      >
         <Navbar.Brand href="#">
           <img
             src={Logo}
@@ -21,18 +25,14 @@ const Menubar = () => {
           />
           {/* <span>Cape Music Academy</span> */}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto  my-lg-0"
-            style={{ height: "100vh" }}
-            navbarScroll
-          >
+        <Navbar.Toggle aria-controls="navbarScroll" id="navbarScroll" />
+        <Navbar.Collapse id="navCollapse">
+          <Nav className="me-auto  my-lg-0" navbarScroll>
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">About</Nav.Link>
-            <Nav.Link href="#action2">Events</Nav.Link>
-            <Nav.Link href="#action2">Courses</Nav.Link>
-            <Nav.Link href="#action2">Contacts</Nav.Link>
+            <Nav.Link href="#action3">Events</Nav.Link>
+            <Nav.Link href="#action4">Courses</Nav.Link>
+            <Nav.Link href="#action5">Contacts</Nav.Link>
           </Nav>
           <Button
             variant="outline-light"
