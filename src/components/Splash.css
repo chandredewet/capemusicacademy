@@ -93,12 +93,21 @@
     justify-content: center;
     align-items: center;
   }
+
+  .splash-article-container h2:first-child {
+    margin: 0;
+  }
   .splash-block {
     display: flex;
     width: 1000px;
-    height: 460.418px;
+    height: 350px;
     flex-shrink: 0;
     background-color: black;
+  }
+
+  .splash-article-container {
+    height: 45rem;
+    padding: 40px 40px;
   }
 
   .splash-title {
@@ -116,8 +125,15 @@
   }
 
   #splash-flex h2 {
-    font-size: 95.37px;
-    color: aqua;
+    font-size: 60px;
+    color: #f29f05;
+  }
+
+  #splash-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2rem;
   }
 
   #splash-hero-star {
@@ -125,14 +141,15 @@
   }
 
   #splash-cta {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
   }
 
   #splash-ctaWords {
-    display: flex;
-    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px; */
   }
 
   #splash-btn {
