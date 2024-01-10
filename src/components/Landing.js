@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import "./Landing.css";
-import MobileHero from "../assets/Homepage-Right.png";
+import MobileHero from "../assets/MobileHero.png";
 import Facebook from "../assets/facebookIcon.png";
 import Email from "../assets/emailIcon.png";
 import Contact from "../assets/ContactIcon.png";
@@ -28,7 +28,7 @@ const Landing = () => {
   return (
     <Container fluid className="px-0 hero-container">
       <div id="headingContainer">
-        <h1 style={headingStyle}>Cape Music Academy</h1>
+        {/* <h1 style={headingStyle}>Cape Music Academy</h1> */}
         <div id="headerFlex">
           <h2 className="header">
             Sustainable <br /> <span id="headerColor">Musicians</span>
@@ -37,9 +37,9 @@ const Landing = () => {
         </div>
       </div>
 
-      <svg width="500" height="200" style={{ position: "absolute", left: "0" }}>
+      {/* <svg width="500" height="200" style={{ position: "absolute", left: "0" }}>
         <circle cx="200" cy="-70" r="40%" fill="black" />
-      </svg>
+      </svg> */}
       <article
         className="article"
         style={containerStyle}

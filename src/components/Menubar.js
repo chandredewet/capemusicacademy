@@ -49,6 +49,22 @@ const Menubar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+    // <nav id="Nav">
+    //   <div id="Navbar-Container">
+    //     <div id="NavbarLogo">
+    //       {/* <h2>Cape Music Academy</h2> */}
+    //     </div>
+    //     <div id="Mobile-Icon">
+    //       <div id="FaBars"></div>
+    //     </div>
+    //     <div id="NavMenu">
+    //       <div id="NavItem">
+    //         <div id="NavLinks" href="#action1">Home</div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </nav>
   );
 };
 

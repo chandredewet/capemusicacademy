@@ -9,7 +9,7 @@ import Menubar from "./components/Menubar";
 const Home = () => {
   return (
     <div className="Home">
-      <Menubar className="menubar" />
+      <Menubar />
       <Landing />
       <About />
       <Splash />

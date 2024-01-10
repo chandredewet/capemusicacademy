@@ -4,7 +4,28 @@
 #navbar {
   padding: 0;
   margin: 0;
+  /*z-index: 120;*/
 }
+
+#navbar-container {
+  z-index: 1000;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+}
+
+#navbarScroll {
+  border-style: none;
+  transition: 0.3s ease-in-out;
+  background: black;
+  z-index: 200;
+}
+
+/* 
 
 #Logo {
   height: 50px;
@@ -12,32 +33,21 @@
   color: white;
 }
 
-#navbarScroll {
-  transition: 0.3s ease-in-out;
-  background: black;
-  z-index: 10;
-}
+
 
 #navCollapse {
-  /* margin: -20px; */
+ 
   overflow-y: scroll;
   padding: 0;
   z-index: 100;
-  /* height: 100vh; */
-  width: 100vw;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  /* transition: 0.1s; */
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  transition: 0.1s ease-out;
   background: black;
-  transition: max-height 0.5s ease-out;
+  
 }
 
-#navbar-container {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
 a.nav-link {
   color: white;
@@ -45,13 +55,73 @@ a.nav-link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 0;
   font-family: "Playfair Display";
   font-weight: 400;
   font-size: 20px;
   color: white;
   display: block;
+} */
+
+#Nav {
+  background-color: black;
+  height: 80px;
+  /* margin-top: -80px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  z-index: 10;
+}
+
+#Navbar-Container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
+}
+
+#Navbar-Logo {
+  color: white;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+  font-family: "Lato";
+  text-decoration: none;
+}
+
+#MobileIcon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+#NavMenu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  margin-right: -22px;
+  display: none;
+  color: white;
+  background-color: black;
 }
 
 /* Media queries for Desktop */
+
+@media screen and (max-width: 960px) {
+  #Nav {
+    transition: 0.8s all ease;
+  }
+}
