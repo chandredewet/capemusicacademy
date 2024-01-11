@@ -49,7 +49,7 @@ body {
 .headerTwo {
   position: absolute;
   z-index: 1;
-  top: 220px;
+  top: 300px;
   font-family: "Playfair Display";
   font-weight: 600;
   font-size: 36px;
@@ -58,7 +58,7 @@ body {
 }
 
 #headerColor {
-  color:#F29F05 ;
+  color: #f29f05;
 }
 
 #cta-button {
@@ -92,11 +92,11 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
 } */
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1324px) {
-  #headerFlex{
+  #headerFlex {
     display: flex;
     flex-direction: row;
   }
-  .headerTwo{
+  .headerTwo {
     top: 400px;
   }
 }

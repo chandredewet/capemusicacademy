@@ -16,9 +16,9 @@ const Menubar = () => {
         <Navbar.Brand href="#">
           <img
             src={Logo}
-            width="70"
-            height="30"
-            style={{ padding: "5px" }}
+            width="50"
+            height="auto"
+            style={{ padding: "1px" }}
             className="d-inline-block align-top"
             id="Logo"
             alt="CapeMusicAcademy Logo"
@@ -27,14 +27,14 @@ const Menubar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" id="navbarScroll" />
         <Navbar.Collapse id="navCollapse">
-          <Nav className="me-auto  my-lg-0" navbarScroll>
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">About</Nav.Link>
-            <Nav.Link href="#action3">Events</Nav.Link>
-            <Nav.Link href="#action4">Courses</Nav.Link>
-            <Nav.Link href="#action5">Contacts</Nav.Link>
+          <Nav className="me-auto  my-lg-0" id="navbarLinks" navbarScroll>
+            <Nav.Link href="#action1" id="navLink">Home</Nav.Link>
+            <Nav.Link href="#action2" id="navLink">About</Nav.Link>
+            <Nav.Link href="#action3" id="navLink">Events</Nav.Link>
+            <Nav.Link href="#action4" id="navLink">Courses</Nav.Link>
+            <Nav.Link href="#action5" id="navLink">Contacts</Nav.Link>
           </Nav>
-          <Button
+          <Button id="navBtn"
             variant="outline-light"
             style={{
               width: 200,

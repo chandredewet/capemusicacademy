@@ -46,7 +46,7 @@ const Landing = () => {
         alt="Guitarist Posing"
       >
         <section id="cta-button">
-          <Button
+          <Button id="darkBtn"
             variant="dark"
             style={{
               width: 200,
@@ -61,7 +61,7 @@ const Landing = () => {
             Enroll Now
           </Button>
           <Button
-            variant="outline-light"
+            variant="outline-light" id="outlineBtn"
             style={{
               width: 200,
               height: 60,
